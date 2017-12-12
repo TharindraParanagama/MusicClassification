@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/tharindra/PycharmProjects/WorkBench/FinalizedFinalProject/MusicClassification/saveGeetha.ckpt"
+all_model_checkpoint_paths: "/home/tharindra/PycharmProjects/WorkBench/FinalizedFinalProject/MusicClassification/saveGeetha.ckpt"

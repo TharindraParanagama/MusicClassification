@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<title>UserGuide</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+<div class='container-fluid'>
+ <hr>
+<h2>What is ClassifyMe?</h2>
+<p>This is a web based tool created for musicians to determine the rating of their song(s) in a convenient manner.In the development of the tool we have used meaningful high level features that will help determine the rating at a reasonable accuracy.Since this tool is a free application.go ahead and play with it.</p>
+<h2>How to use the system?</h2>
+<p>A step by step guide to obtain the rating for a sample song is as follows:
+The system is compatible only with audio files with .mp3 oor .wav extension only.Therefore make sure the audio file you are inputting to the system is in a compatible format.Next the song should be named in according to this convention "songName@Anything.mp3/.wav".It's of vital importance that the @ is avaiable in the name as the splitting is based on the @ symbol to derive the song name.further giving a distinct and meaningful name for your song will also help you when assessing the prediction results.After the song(s) is properly labeled the directory where the song /song are held can given to the text box above the extract button to extract the relevant features.As the prediction is based on these features the feature extraction should be performed first prior to any other operation.when the features have been extracted it will be saved to a csv file with the relevant names of the songs.If your feature ectraction was successful a pop up will alert the sucess .The path of the file which holds the extracted features must then be given to the textbox above the prediction button.This will prompt an popup which shows the rating of each song by name.
+</p>
+ <h2>Helpful information for assesment:</h2>
+ <p>
+  when using the system the user can first determine a song which he/she likes and give it to the system to determine the rating given by the system.next the we have provided the user with the ranges in which each feature varies for each rating .therefore the user can give there song to the system and determine the label.then based on the label if there's a mismatch the user can check in which features he/she is out of range and determine necessary precautions for improve ment.</p>
+
+ <p> possible suggestions in improving the current state if mismatch exist.</p>
+ <br>
+ <div class="list-group">
+ <a href="#"  class="list-group-item">adding different instruments to the song. </a>
+ <a href="#"  class="list-group-item">adding more people to make it a group singing rather than solo.</a>
+ <a href="#"  class="list-group-item">changing the environment in which the song is recorded.(indoor or outdoor)</a>
+ </div>
+ <br>
+ <p>The threshold bands are as follows:</p>
+ <br>
+ <table class="table">
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>tempo</th>
+      <th>MFCC</th>
+      <th>harmonic element</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">0</th>
+      <td> -131.594350 to 39.053384 </td>
+      <td> 69.837416 to  184.570312  </td>
+      <td> -0.025616 to 0.041858</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td> -722.431391 to -292.241664</td>
+      <td> 92.285156 to 198.768029   </td>
+      <td> -0.000536 to  0.000053 </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td> -289.836759 to -131.472384</td>
+      <td> 75.999540  to 184.570312 </td>
+      <td> -0.064207 to  0.013969 </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+<hr>
+</body>
+</html>

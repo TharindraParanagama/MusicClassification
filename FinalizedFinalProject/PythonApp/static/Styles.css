@@ -1,0 +1,13 @@
+.image {
+   position: relative;
+   width: 100%;
+   height:100%; /* for IE 6 */
+}
+
+h2 {
+   position: absolute;
+   font-color:wight;
+   top: 200px;
+   left: 0;
+   width: 100%;
+}
